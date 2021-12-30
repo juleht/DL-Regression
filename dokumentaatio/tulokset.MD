@@ -30,20 +30,20 @@ Parhaimman mahdollisen mallin löytämiseksi mallia koottiin pala palalta lisä�
 Ensimmäisessä mallissa oli yksi piilotettukerros, jossa oli 8 neuronia. Malli ajettiin batch sizella 8, 16, 32.
 
 
-![malli yksi](/kuvat/yksi_hidden_layer_8_nodea_batch_size_8_16_32_LR_001_epochs_300.png)
+![malli yksi](/kuvat/hiddenlayer8nodea_batchsize8_16_32.png)
 
 Sama malli, mutta batch sizea nostettiin 128, 256, 512.
 
-![malli kaksi](/kuvat/yksi_hidden_layer_8_nodea_batch_size_128_256_512_LR_001_epochs_300.png)
+![malli kaksi](/kuvat/hiddenlayer8nodea_batchsize128_256_512.png)
 
 
 Toisessa mallissa oli edelleen yksi piilotettukerros, jossa oli 16 neuronia. Batch sizella 32, 64, 128
 
-![malli kolme](/kuvat/yksi_hidden_layer_16_nodea_batch_size_32_64_128_LR_001_epochs_300.png)
+![malli kolme](/kuvat/hiddenlayer16nodea_batchsize32_64_128.png)
 
 Kolmanteen malliin asetettiin kaksi piilotettua kerrosta 8, 16 neuronilla. Batch sizella 32, 64, 128
 
-![malli nelja](/kuvat/kaksi_hidden_layer_8_ja_16_nodea_batch_size_32_64_128_LR_001_epochs_300.png)
+![malli nelja](/kuvat/hiddenlayer8_16nodea_batchsize32_64_128.png)
 
 
 Näytti siltä, että malli meni tähän ongelmaan nähden todella nopeasti liian monimutkaiseksi ja mallit näyttivät ylioppivan datan, lisäksi mallien selitysaste laski. Parhaimmaksi malliksi osoittaitui yhden piilotetun kerroksen malli, jossa on 8 neuronia batch sizella 128.
